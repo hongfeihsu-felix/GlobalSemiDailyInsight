@@ -1,0 +1,20 @@
+{
+  "source": "2026全球半导体展望 - Leslie Wu 2025.11.11",
+  "note": "TSMC新建工厂进度与量产时间表",
+  "data": {
+    "fabs": [
+      {"fab": "Fab18B P5~P8", "location": "台南", "capacity": "120k", "node": "3nm", "ramp": "2023", "2024_progress": "3Q 100k量产", "2025_progress": "P8 20k Move in", "2026_progress": ""},
+      {"fab": "Fab20A P1~P4", "location": "新竹宝山", "capacity": "120k", "node": "2nm/A16", "ramp": "2025", "2024_progress": "P1 20k Move in", "2025_progress": "P1+P2 40k Move in", "2026_progress": "P3+P4 60k Move in"},
+      {"fab": "Fab21 P1", "location": "凤凰城", "capacity": "30k", "node": "4nm", "ramp": "2025", "2024_progress": "4Q风险试产", "2025_progress": "量产", "2026_progress": ""},
+      {"fab": "Fab21 P2", "location": "凤凰城", "capacity": "30k", "node": "3/2nm", "ramp": "2027", "2024_progress": "土建", "2025_progress": "封顶", "2026_progress": "30k Move in"},
+      {"fab": "Fab21 P3", "location": "凤凰城", "capacity": "30k", "node": "A16", "ramp": "2029?", "2024_progress": "", "2025_progress": "2025动土", "2026_progress": "土建"},
+      {"fab": "Fab22 P1~P3", "location": "高雄", "capacity": "60k", "node": "N2", "ramp": "2025", "2024_progress": "4Q 20k Move in", "2025_progress": "量产", "2026_progress": "0"},
+      {"fab": "Fab22 P4~P5", "location": "高雄", "capacity": "40k", "node": "A16", "ramp": "2027", "2024_progress": "土建", "2025_progress": "3Q 封顶", "2026_progress": "0"},
+      {"fab": "Fab23A", "location": "日本熊本", "capacity": "55k", "node": "28/12nm", "ramp": "2024", "2024_progress": "4Q 量产", "2025_progress": "全部建完", "2026_progress": "2Q 20k Move in"},
+      {"fab": "Fab23B", "location": "日本熊本", "capacity": "40k", "node": "40~7nm", "ramp": "2028", "2024_progress": "2024动土", "2025_progress": "", "2026_progress": "0"},
+      {"fab": "Fab24", "location": "德国", "capacity": "40k", "node": "28/12nm", "ramp": "2028", "2024_progress": "", "2025_progress": "2025动土", "2026_progress": "封顶"},
+      {"fab": "Fab25A/B", "location": "台中", "capacity": "120k", "node": "A14", "ramp": "2028", "2024_progress": "", "2025_progress": "2025动土", "2026_progress": "0"}
+    ],
+    "germany_fab_note": "德国厂以28nm为主，主要针对汽车MCU，初步产能规划为40k，2024年底动土，2028/9年量产"
+  }
+}
