@@ -1,0 +1,101 @@
+{
+  "source": "2026全球半导体展望 - Leslie Wu 2025.11.11",
+  "note": "TSMC CoWoS产能按客户分拆(片/月)。2025年国内CSP流片需license，几乎全部被ban",
+  "total_capacity": {
+    "2023_total": "120,000", "2023_Q1": "17,500", "2023_Q2": "25,000", "2023_Q3": "33,000", "2023_Q4": "35,000",
+    "2024_total": "326,000",
+    "2025_total": "720,000",
+    "2026_total": "1,200,000",
+    "2025_breakdown": "CoWoS-L: 360K, CoWoS-S: 260K, CoWoS-R: 100K"
+  },
+  "by_customer": {
+    "NV": {
+      "2023_Q1": 5631, "2023_Q2": 12306, "2023_Q3": 15227, "2023_Q4": 11757, "2023_total": 44921,
+      "2024_total": 165000,
+      "2025_total": 400000, "2026_total": 680000,
+      "remark": "A/H/B, 季度产能为预估"
+    },
+    "Broadcom": {
+      "2023_Q1": 3230, "2023_Q2": 5422, "2023_Q3": 10986, "2023_Q4": 9398, "2023_total": 29036,
+      "2024_total": 65000,
+      "2025_total": 95000, "2026_total": 160000,
+      "remark": "Google TPU5&TPU6 / ByteDance(5nm)/ban / Meta-MITA v1(7nm)"
+    },
+    "Xilinx": {
+      "2023_Q1": 3382, "2023_Q2": 3395, "2023_Q3": 3416, "2023_Q4": 3450, "2023_total": 13643,
+      "2024_total": 15000,
+      "2025_total": 20000, "2026_total": 25000
+    },
+    "AMD": {
+      "2023_Q1": 308, "2023_Q2": 361, "2023_Q3": 534, "2023_Q4": 5612, "2023_total": 6815,
+      "2024_total": 35000,
+      "2025_total": 55000, "2026_total": 70000,
+      "remark": "Mi300, 季度产能为预估"
+    },
+    "Annapurna": {
+      "2023_Q1": 1555, "2023_Q2": 1500, "2023_Q3": 1800, "2023_Q4": 1800, "2023_total": 6655,
+      "2024_total": 7000,
+      "2025_total": 15000, "2026_total": 12500,
+      "remark": "AWS ? 非Graviton"
+    },
+    "Cisco": {
+      "2023_total": 4058, "2024_total": 5000,
+      "2025_total": 7000, "2026_total": 10000
+    },
+    "Marvell": {
+      "2023_total": 2397, "2024_total": 16000,
+      "2025_total": 60000, "2026_total": 70000,
+      "remark": "AWS-Trainium(5nm) / Meta-MITA v2(5nm)"
+    },
+    "Sanechips": {
+      "2023_total": 2653, "2024_total": 0,
+      "remark": "2025 ban"
+    },
+    "Alchip": {
+      "2023_total": 1590, "2024_total": 8000,
+      "2025_total": 17500, "2026_total": 45000,
+      "remark": "AWS-Trainium(7nm)(3nm) / Intel Gaudi 2(7nm)&3(5nm)"
+    },
+    "T-Head": {
+      "2023_total": 1325, "2024_total": 0,
+      "remark": "2025 ban"
+    },
+    "Microsoft": {
+      "2023_total": 607, "2024_total": 1000,
+      "2025_total": 1000
+    },
+    "GUC": {
+      "2023_total": 463, "2024_total": 7000,
+      "2025_total": 15000, "2026_total": 25000,
+      "remark": "Microsoft Maia&Codail(5nm) / T-Head 1(5nm) / 2025 ban"
+    },
+    "Baidu": {
+      "2023_total": 0, "2024_total": 1000,
+      "remark": "Kunlun 2(5nm) / 2025 ban"
+    },
+    "Tencent": {
+      "2023_total": 0, "2024_total": 1000,
+      "remark": "Zixiao v2(5nm) / 2025 ban"
+    },
+    "MetaX": {
+      "2023_total": 0, "2024_total": 1000,
+      "remark": "C500降规版C280 / 2025 ban"
+    },
+    "MTK": {
+      "remark": "TPU7",
+      "2025_total": 1000, "2026_total": 15000
+    }
+  },
+  "total_production": {
+    "2023_total": 114163, "2024_total": 326000, "2025_total": 686500, "2026_total": 1112500,
+    "remark": "实际生产数量（非产能上限）"
+  },
+  "key_observations": [
+    "NV在CoWoS占比2025年约58%（400K/686.5K），2026年约61%（680K/1.1125M）",
+    "2025年国内CSP客户（百度/腾讯/字节/阿里T-Head/Sanechips）全部被ban，CoWoS归零",
+    "Broadcom AI ASIC强劲增长：2025年95K → 2026年160K（+68%）",
+    "AMD Mi300稳步增长：2025年55K → 2026年70K（+27%）",
+    "Marvell因AWS Trainium翻倍增长：2025年60K → 2026年70K",
+    "台积电2026年CoWoS总产能达1.2M片/月，同比增长66.7%"
+  ]
+}
