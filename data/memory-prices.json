@@ -1,0 +1,55 @@
+{
+  "last_updated": "2026-04-28T14:27:03+08:00",
+  "next_update": "2026-05-01T14:27:03+08:00",
+  "dram": {
+    "ddr4_price_trend": "down",
+    "ddr4_price_change_pct": "-1.2%",
+    "ddr5_price_trend": "stable",
+    "ddr5_price_change_pct": "-0.8%",
+    "source": "TrendForce Apr 2026",
+    "notes": "DDR4 spot market eased ~1.2% WoW to $33.56 (1Gx8 3200MT/s). DDR5 contract prices still elevated but marginal softening in spot. DRAM cycle in later-stage upturn; mainstream DDR4 demand from PC OEM slowing into seasonal Q2 downturn. AI server demand remains strong (DDR5 HBM-aware) but pulling mixed-signal DRAM supply."
+  },
+  "nand": {
+    "qlc_price_trend": "up",
+    "tlc_price_trend": "up",
+    "price_change_pct": "+2.1%",
+    "source": "TrendForce Apr 2026 / skill index",
+    "notes": "NAND ASP Index at $3.42 (+2.1% WoW). AI server SSD demand continues to lift QLC NAND contract pricing. NAND climbed 246% from start of 2025 through Dec per Kingston. QLC gaining share in datacenter. 2Q26 contract prices expected up 70-75% QoQ per TrendForce Mar 2026 guidance."
+  },
+  "hbm": {
+    "supply_demand": "shortage",
+    "price_trend": "up",
+    "key_driver": "SK Hynix HBM3E pre-booked by NVIDIA/OpenAI; Micron 1αnm HBM3E ramp; Samsung HBM yield issues",
+    "notes": "HBM3E allocation TIGHT through 2026. SK Hynix commands ~60% HBM market share; 2026 capacity already sold out. Micron committing $200B US memory expansion (volume production 2027+). HBM consumes ~23% of total DRAM wafer capacity (TechInsider). SK Hynix flagging multi-year supply gap."
+  },
+  "cxmt": {
+    "progress": "扩产中",
+    "dram_production_node": "17nm LPDDR5",
+    "impact": "CXMT posting $8B revenue 2025 (+130% YoY); targeting domestic smartphone OEM supply; 2026 HBM3 development underway",
+    "notes": "CXMT on track for HBM3 production by end of 2026; third-gen HBM in development. Primary threat to foreign DRAM vendors in China smartphone market. U.S. export controls continue to restrict equipment access."
+  },
+  "ymtc": {
+    "progress": "扩产中",
+    "nand_production_node": "232L 3D NAND (Xtacking 3.0)",
+    "impact": "YMTC to become world's 3rd largest NAND producer; Wuhan fab ramp in 2026, mass production 2027; aggressive pricing threatening Samsung/Kioxia",
+    "notes": "YMTC advancing expansion plan with equipment move-in H2 2026. YMTC 2026 NAND output expected to challenge global ranking. US export controls (CHIPS Act / BIS EAR) limiting equipment procurement but domestic equipment suppliers (Naura, Maxwell) increasingly filling gap."
+  },
+  "smartphone_bom": {
+    "memory_cost_change_pct": "+25% vs 2025",
+    "key_driver": "DRAM + NAND simultaneous upcycle; HBM挤占消费级 DRAM 产能",
+    "impact_on_tam": "低价格手机受冲击最大；中价位手机($400-600)BOM上涨16-20%",
+    "notes": "Counterpoint: 8GB LPDDR5X + 256GB UFS 4.0 BOM share now 14% (DRAM) + 11% (NAND) = 25% total per device. Budget Android phone model survival risk elevated into 2026-2027."
+  },
+  "cycle_position": {
+    "overall": "存储上行中期",
+    "confidence": "中",
+    "key_signal": "NAND contract prices +70-75% QoQ 2Q26 guidance; DRAM upcycle entering later stage (PC OEM需求走弱); HBM持续短缺",
+    "risk_to_view": "PC/消费电子需求进一步疲软可能拖累DDR4价格; 中国手机OEM因BOM压力可能下修出货目标"
+  },
+  "update_history": [
+    {
+      "timestamp": "2026-04-28T14:27:03+08:00",
+      "summary": "DRAM:down NAND:up HBM:shortage CXMT/YMTC扩产中"
+    }
+  ]
+}
