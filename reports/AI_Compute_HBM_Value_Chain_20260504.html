@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Compute / HBM / Memory Value Chain — 2026-05-04</title>
+<style>
+body { background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;margin:0;padding:0; }
+.wrap { max-width:720px;margin:0 auto;padding:20px; }
+h1 { font-size:20px;font-weight:700;margin:0 0 4px 0;color:#e6edf3; }
+.date { color:#8b949e;font-size:12px;margin-bottom:24px; }
+h2 { font-size:14px;font-weight:600;color:#e6edf3;border-bottom:1px solid #30363d;padding-bottom:6px;margin:24px 0 12px 0; }
+h3 { font-size:13px;font-weight:600;color:#58a6ff;margin:16px 0 6px 0; }
+.tag { display:inline-block;background:#1f2937;border:1px solid #374151;border-radius:4px;padding:0 6px;font-size:11px;font-weight:600;color:#58a6ff;margin-right:4px; }
+table { width:100%;border-collapse:collapse;font-size:13px;margin:8px 0; }
+th { background:#161b22;color:#8b949e;font-weight:600;text-align:left;padding:8px 10px;border:1px solid #30363d;font-size:11px;text-transform:uppercase;letter-spacing:0.5px; }
+td { padding:8px 10px;border:1px solid #30363d;vertical-align:top; }
+tr:nth-child(even) td { background:rgba(255,255,255,0.02); }
+blockquote { border-left:3px solid #58a6ff;margin:12px 0;padding:8px 16px;background:rgba(88,166,255,0.05);border-radius:0 6px 6px 0; }
+.quote-text { font-style:italic;margin-bottom:6px;color:#e6edf3; }
+.quote-src { font-size:11px;color:#8b949e; }
+.quote-cn { color:#8b949e;font-size:12px;margin-top:4px; }
+.chain { background:#161b22;border:1px solid #30363d;border-radius:8px;padding:12px 16px;font-family:'SF Mono',Consolas,monospace;font-size:12px;line-height:1.8;margin:10px 0;white-space:pre-wrap;overflow-x:auto; }
+.chain-node { color:#58a6ff; }
+.chain-arrow { color:#8b949e; }
+.cal { display:flex;gap:10px;padding:4px 0;font-size:13px; }
+.cal-date { color:#58a6ff;font-weight:600;min-width:56px; }
+.cal-tag { color:#8b949e;font-size:11px; }
+.risk-red { color:#f85149; }
+.risk-orange { color:#d29922; }
+.risk-green { color:#3fb950; }
+.footer { margin-top:32px;padding-top:16px;border-top:1px solid #30363d;color:#8b949e;font-size:11px;text-align:center; }
+p { margin:8px 0; }
+li { margin:6px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>AI Compute → HBM → Memory 价值链趋势总表</h1>
+<p><strong>2026年5月4日 | 数据来源：CLSA / 公司法说会 / GS / Bernstein / BofA / JPM</strong></p>
+<hr />
+<h2>一、AI加速器出货量趋势（单位：M颗）</h2>
+<table>
+<thead>
+<tr>
+<th>产品</th>
+<th>客户</th>
+<th>2024A</th>
+<th>2025A</th>
+<th>2026E</th>
+<th>2027E</th>
+<th>2028E</th>
+<th>趋势</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Blackwell</strong></td>
+<td>NVIDIA</td>
+<td>1.0</td>
+<td>4.8</td>
+<td><strong>6.0</strong></td>
+<td>—</td>
+<td>—</td>
+<td>🟢 2026年仍是主力，H2 Rubin交接</td>
+</tr>
+<tr>
+<td><strong>Rubin</strong></td>
+<td>NVIDIA</td>
+<td>—</td>
+<td>—</td>
+<td><strong>1.0→7.0</strong></td>
+<td><strong>8.5</strong></td>
+<td><strong>9.0</strong></td>
+<td>🔴 2026H2爆量拐点</td>
+</tr>
+<tr>
+<td>MI350 (HBM3e)</td>
+<td>AMD</td>
+<td>—</td>
+<td>—</td>
+<td><strong>0.3</strong></td>
+<td><strong>1.2</strong></td>
+<td><strong>1.6</strong></td>
+<td>🟡 2027年量级跃升</td>
+</tr>
+<tr>
+<td>TPU v7</td>
+<td>Broadcom</td>
+<td>—</td>
+<td>—</td>
+<td><strong>2.3</strong></td>
+<td>0.5</td>
+<td>—</td>
+<td>🟢 大客户定制</td>
+</tr>
+<tr>
+<td>TPU v8</td>
+<td>Broadcom</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td><strong>2.9</strong></td>
+<td><strong>4.0</strong></td>
+<td>🔴 2027主力</td>
+</tr>
+<tr>
+<td>TPU v7</td>
+<td>联发科</td>
+<td>—</td>
+<td>—</td>
+<td><strong>0.4</strong></td>
+<td><strong>0.7</strong></td>
+<td>—</td>
+<td>🟡 ASIC新兵</td>
+</tr>
+<tr>
+<td>TPU v8</td>
+<td>联发科</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td><strong>2.0</strong></td>
+<td><strong>4.0</strong></td>
+<td>🔴 2027年爆发</td>
+</tr>
+<tr>
+<td>OpenAI ASIC</td>
+<td>Broadcom</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td><strong>2.0</strong></td>
+<td><strong>4.0</strong></td>
+<td>🟡 新客户</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td>—</td>
+<td><strong>5.7</strong></td>
+<td><strong>7.9</strong></td>
+<td><strong>~14.5</strong></td>
+<td><strong>~19.3</strong></td>
+<td><strong>~25.2</strong></td>
+<td>▲▲ +85% YoY</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：Rubin 2026E从1M→7M是指从上半年到下半年的爬坡，非全年平均值</p>
+</blockquote>
+<hr />
+<h2>二、AI加速器单芯片HBM含量（单位：Gb/颗）</h2>
+<table>
+<thead>
+<tr>
+<th>产品</th>
+<th>客户</th>
+<th>HBM类型</th>
+<th>HBM含量</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Blackwell (GB200)</td>
+<td>NVIDIA</td>
+<td>HBM3e 8-Hi</td>
+<td><strong>240 Gb</strong></td>
+<td>当前主流</td>
+</tr>
+<tr>
+<td>Rubin (GB300)</td>
+<td>NVIDIA</td>
+<td>HBM3e / HBM4</td>
+<td><strong>288 Gb</strong></td>
+<td>较Blackwell +20%</td>
+</tr>
+<tr>
+<td>MI350</td>
+<td>AMD</td>
+<td>HBM3e</td>
+<td><strong>240 Gb</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>TPU v7</td>
+<td>Broadcom</td>
+<td>HBM3e</td>
+<td><strong>192 Gb</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>TPU v8</td>
+<td>Broadcom</td>
+<td>HBM4</td>
+<td><strong>288 Gb</strong></td>
+<td>2027年主力</td>
+</tr>
+<tr>
+<td>TPU v7</td>
+<td>联发科</td>
+<td>HBM3e</td>
+<td><strong>192 Gb</strong></td>
+<td>ASIC新兵</td>
+</tr>
+<tr>
+<td>TPU v8</td>
+<td>联发科</td>
+<td>HBM4</td>
+<td><strong>288 Gb</strong></td>
+<td>2027年爆发</td>
+</tr>
+<tr>
+<td>OpenAI ASIC</td>
+<td>Broadcom</td>
+<td>HBM4</td>
+<td><strong>192 Gb</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>三、HBM总需求（Gb当量，单位：百万Gb）</h2>
+<table>
+<thead>
+<tr>
+<th>来源/产品</th>
+<th>2024A</th>
+<th>2025A</th>
+<th>2026E</th>
+<th>2027E</th>
+<th>2028E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NVDA Blackwell</td>
+<td>240</td>
+<td>240</td>
+<td>240</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>NVDA Rubin</td>
+<td>—</td>
+<td>—</td>
+<td>288</td>
+<td>656</td>
+<td>803</td>
+</tr>
+<tr>
+<td>AMD 300/400 series</td>
+<td>240</td>
+<td>240</td>
+<td>240</td>
+<td>432</td>
+<td>432</td>
+</tr>
+<tr>
+<td>Broadcom TPU v7</td>
+<td>64</td>
+<td>32</td>
+<td>192</td>
+<td>192</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Broadcom TPU v8</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>288</td>
+<td>288</td>
+</tr>
+<tr>
+<td>Broadcom OpenAI</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>192</td>
+<td>192</td>
+</tr>
+<tr>
+<td>联发科 TPU v7</td>
+<td>—</td>
+<td>—</td>
+<td>192</td>
+<td>192</td>
+<td>—</td>
+</tr>
+<tr>
+<td>联发科 TPU v8</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>288</td>
+<td>288</td>
+</tr>
+<tr>
+<td><strong>合计（Gb当量）</strong></td>
+<td><strong>5,356</strong></td>
+<td><strong>11,194</strong></td>
+<td><strong>25,110</strong></td>
+<td><strong>61,631</strong></td>
+<td><strong>89,381</strong></td>
+</tr>
+<tr>
+<td><strong>YoY</strong></td>
+<td>+174%</td>
+<td>+109%</td>
+<td><strong>+124%</strong></td>
+<td><strong>+145%</strong></td>
+<td>+45%</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>CLSA数据（2026年4月30日）</p>
+</blockquote>
+<hr />
+<h2>四、HBM供给与供需缺口</h2>
+<table>
+<thead>
+<tr>
+<th>供应商</th>
+<th>2025A</th>
+<th>2026E</th>
+<th>2027E</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SK海力士</strong></td>
+<td>主导，HBM3e领先</td>
+<td>Q3已售罄，&gt;90%锁定AI</td>
+<td>18层HBM4量产</td>
+<td>行业第一</td>
+</tr>
+<tr>
+<td><strong>三星电子</strong></td>
+<td>追赶中</td>
+<td>HBM4行业首次出货NVDA</td>
+<td>HBM4E采样16Gb/s/pin</td>
+<td>追赶速度超预期</td>
+</tr>
+<tr>
+<td><strong>美光科技</strong></td>
+<td>第三</td>
+<td>HBM3e爬坡，目标20%+份额</td>
+<td>HBM4时程未明</td>
+<td>广岛厂扩产中</td>
+</tr>
+<tr>
+<td><strong>合计HBM供给（百万Gb）</strong></td>
+<td>~9,000</td>
+<td>~18,000</td>
+<td>~35,000</td>
+<td>供给爬坡慢于需求</td>
+</tr>
+<tr>
+<td><strong>供需缺口</strong></td>
+<td>紧</td>
+<td><strong>-7,000</strong></td>
+<td><strong>-26,000</strong></td>
+<td>缺口2027年最大</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>五、存储价格走势（关键节点）</h2>
+<h3>5.1 DRAM合约价（16Gb DDR5，USD/GB）</h3>
+<table>
+<thead>
+<tr>
+<th>季度</th>
+<th>价格</th>
+<th>QoQ涨幅</th>
+<th>YoY涨幅</th>
+<th>阶段判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024-Q1</td>
+<td>~US$4</td>
+<td>—</td>
+<td>—</td>
+<td>周期底部</td>
+</tr>
+<tr>
+<td>2024-Q4</td>
+<td>~US$8</td>
+<td>+38%</td>
+<td>+129%</td>
+<td>HBM溢出，拉动DDR5</td>
+</tr>
+<tr>
+<td>2025-Q1</td>
+<td>~US$20</td>
+<td>+150%</td>
+<td>+400%</td>
+<td>超级周期启动</td>
+</tr>
+<tr>
+<td>2025-Q4</td>
+<td>~US$38</td>
+<td>+26%</td>
+<td>+200%+</td>
+<td>价格高原</td>
+</tr>
+<tr>
+<td><strong>2026-Q1</strong></td>
+<td><strong>US$35-40</strong></td>
+<td><strong>+93% QoQ</strong></td>
+<td><strong>+200%+</strong></td>
+<td>🔴 <strong>创25年历史新高</strong></td>
+</tr>
+<tr>
+<td>2026-Q2E</td>
+<td>~US$40-45</td>
+<td>+20%</td>
+<td>+180%</td>
+<td>TrendForce预估</td>
+</tr>
+<tr>
+<td>2026-H2E</td>
+<td>待观察</td>
+<td>—</td>
+<td>—</td>
+<td>Rubin爆量影响关键</td>
+</tr>
+</tbody>
+</table>
+<h3>5.2 HBM合约价（HBM3e 8-Hi，USD/GB）</h3>
+<table>
+<thead>
+<tr>
+<th>季度</th>
+<th>价格</th>
+<th>QoQ涨幅</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-Q1</td>
+<td>US$20</td>
+<td>+20%</td>
+<td>HBM3e 8-Hi合约基准</td>
+</tr>
+<tr>
+<td>2025-Q4</td>
+<td>US$38</td>
+<td>+26%</td>
+<td>供应紧张</td>
+</tr>
+<tr>
+<td><strong>2026-Q1</strong></td>
+<td><strong>US$45</strong></td>
+<td><strong>+18%</strong></td>
+<td>SK Hynix HBM3e Q3售罄</td>
+</tr>
+<tr>
+<td>2026-H2E</td>
+<td>持续紧张</td>
+<td>—</td>
+<td>Rubin爆量承压</td>
+</tr>
+</tbody>
+</table>
+<h3>5.3 关键价格比值</h3>
+<table>
+<thead>
+<tr>
+<th>比值</th>
+<th>当前值</th>
+<th>历史均值</th>
+<th>信号含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HBM/DDR5合约价</td>
+<td>45/38 ≈ <strong>1.18x</strong></td>
+<td>1.2-1.5x</td>
+<td>合理区间，HBM供给仍紧张</td>
+</tr>
+<tr>
+<td>DDR4/DDR5现货价差</td>
+<td>DDR4高溢价→开始收窄</td>
+<td>1.0x</td>
+<td>⚠️ DDR4现货已开始回调（-8% WoW）</td>
+</tr>
+<tr>
+<td>DRAM合约价/现货价</td>
+<td>接近平价</td>
+<td>0.9-1.0x</td>
+<td>合约市场健康</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>六、CoWoS封装产能（wspm，wafers per month）</h2>
+<table>
+<thead>
+<tr>
+<th>时间点</th>
+<th>CoWoS总产能</th>
+<th>有效产能（良率85%）</th>
+<th>对应GB200/Rubin产能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023年底</td>
+<td>13,000</td>
+<td>~11,000</td>
+<td>严重瓶颈，NVDA受限</td>
+</tr>
+<tr>
+<td>2024年中</td>
+<td>35,000</td>
+<td>~30,000</td>
+<td>快速扩张期</td>
+</tr>
+<tr>
+<td>2025年初</td>
+<td>65,000</td>
+<td>~55,000</td>
+<td>紧平衡</td>
+</tr>
+<tr>
+<td><strong>2026年底目标</strong></td>
+<td><strong>130,000</strong></td>
+<td><strong>~110,000</strong></td>
+<td><strong>GB200交付改善关键节点</strong></td>
+</tr>
+<tr>
+<td><strong>2027年目标</strong></td>
+<td><strong>170,000</strong></td>
+<td><strong>~145,000</strong></td>
+<td>Rubin大量上量</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>CoWoS-L月产能约3,000片，是GB200 NVL72的直接约束</p>
+</blockquote>
+<hr />
+<h2>七、AI CapEx → HBM需求传导时间轴</h2>
+<p><code>2025-Q4:  超大规模CapEx确认2026年继续扩张
+     ↓
+2026-Q1:  Rubin开始爬坡（1M颗）
+     ↓
+2026-Q2:  Rubin加速（7M目标），HBM需求激增
+     ↓
+2026-Q3:  HBM3e供给售罄（SK Hynix确认）
+           三星HBM4向NVDA首次出货
+     ↓
+2026-Q4: Rubin爆量（7M）→ HBM缺口约1.7M颗
+           存储涨价最剧烈阶段
+     ↓
+2027-Q1: HBM供需缺口全年最大
+           18层HBM4产能开始开出
+     ↓
+2027-Q4: HBM4产能开出，缺口边际收窄
+           缺口闭环预计2027年底</code></p>
+<hr />
+<h2>八、综合周期定位矩阵</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>2025</th>
+<th>2026-Q1</th>
+<th>2026-H2</th>
+<th>2027</th>
+<th>2028</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AI加速器出货</strong></td>
+<td>7.9M</td>
+<td>爆量启动</td>
+<td>Rubin&gt;5M</td>
+<td>19M（+33%）</td>
+<td>25M</td>
+</tr>
+<tr>
+<td><strong>HBM需求（Gb当量）</strong></td>
+<td>11B</td>
+<td>25B</td>
+<td>+124% YoY</td>
+<td><strong>61B (+145%)</strong></td>
+<td>89B</td>
+</tr>
+<tr>
+<td><strong>HBM供需缺口</strong></td>
+<td>紧</td>
+<td><strong>-7B</strong></td>
+<td><strong>-10B</strong></td>
+<td><strong>-26B</strong></td>
+<td>收窄</td>
+</tr>
+<tr>
+<td><strong>DRAM合约价QoQ</strong></td>
+<td>+30-40%</td>
+<td><strong>+93%</strong></td>
+<td>+20-30%</td>
+<td>+40%</td>
+<td>+20%</td>
+</tr>
+<tr>
+<td><strong>CoWoS产能</strong></td>
+<td>65K</td>
+<td>90K</td>
+<td>130K</td>
+<td>170K</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>存储周期位置</strong></td>
+<td>第一波加速</td>
+<td>🔴<strong>第二波最陡峭</strong></td>
+<td>高位震荡</td>
+<td>高位但边际改善</td>
+<td>降温</td>
+</tr>
+<tr>
+<td><strong>AI CapEx YoY</strong></td>
+<td>+52%</td>
+<td>+63%</td>
+<td>+67%</td>
+<td>+40%（首次预测）</td>
+<td>待定</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>九、关键结论</h2>
+<p><strong>当前最核心的矛盾</strong>：</p>
+<blockquote>
+<p>2026H2 Rubin爆量（+6M颗）对HBM的需求跃升（约+7,000M Gb），与HBM产能爬坡（受存储厂投资意愿降低制约）之间存在约1.7M颗的缺口，这个缺口将贯穿整个2026H2-2027，是存储超级周期最陡峭的阶段。</p>
+</blockquote>
+<p><strong>三个超预期</strong>：
+1. 三星HBM4向NVDA首次出货（Bernstein确认，领先市场预期）
+2. SK Hynix HBM3e Q3售罄（比预期更早）
+3. JPM BofA双确认CY27 CapEx +40%（比市场预期更快）</p>
+<p><strong>一个预警</strong>：
+- BofA Memory Weekly（4/24）：存储厂对扩HBM意愿降温，<strong>2027年缺口的实际规模可能比CLSA模型预测更大</strong></p>
+<hr />
+<h2>十、数据来源索引</h2>
+<table>
+<thead>
+<tr>
+<th>数据</th>
+<th>来源</th>
+<th>日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI加速器出货量/HBM需求</td>
+<td>CLSA</td>
+<td>2026-04-30</td>
+</tr>
+<tr>
+<td>HBM供应商进展</td>
+<td>Bernstein Samsung HBM4</td>
+<td>2026-04-30</td>
+</tr>
+<tr>
+<td>SK Hynix HBM3e售罄</td>
+<td>CLSA</td>
+<td>2026-04-30</td>
+</tr>
+<tr>
+<td>DRAM/HBM合约价</td>
+<td>TrendForce + BofA</td>
+<td>2026-04-24</td>
+</tr>
+<tr>
+<td>DRAM现货价</td>
+<td>DRAMeXchange</td>
+<td>2026-04</td>
+</tr>
+<tr>
+<td>CoWoS产能</td>
+<td>TSMC法说会 + TrendForce</td>
+<td>持续</td>
+</tr>
+<tr>
+<td>CY26/27 CapEx</td>
+<td>JPM + BofA</td>
+<td>2026-04-27/29</td>
+</tr>
+<tr>
+<td>NVDA Rubin爬坡</td>
+<td>CLSA + 供应链</td>
+<td>2026-04</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>报告生成：2026年5月4日 | Jordan Belfort · Senior Semiconductor Analyst</em></p>
+<div class="footer">
+  Jordan Belfort · Senior Semiconductor Analyst<br>
+  数据来源：Reuters / Bloomberg / Counterpoint Research / TrendForce / 公司财报
+</div>
+</div>
+</body>
+</html>
